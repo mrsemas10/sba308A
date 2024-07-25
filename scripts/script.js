@@ -21,11 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
             displayError(cocktailContainer, 'Sorry, we could nott load a cocktail at this time.');
         }
     };
-
-    // Initial fetch
     loadCocktail();
 
-    // Event listeners for buttons
     createButton.addEventListener('click', () => createCocktail(cocktails));
     updateButton.addEventListener('click', () => updateCocktail(currentCocktail));
     deleteButton.addEventListener('click', () => {

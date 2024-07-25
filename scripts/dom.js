@@ -1,5 +1,3 @@
-// dom.js
-
 export const renderCocktail = (cocktailContainer, cocktail) => {
     const cocktailHTML = `
     <h2>${cocktail.strDrink}</h2>
@@ -11,6 +9,14 @@ export const renderCocktail = (cocktailContainer, cocktail) => {
             .map(key => `<li>${cocktail[key]}</li>`)
             .join('')}
     </ol>`
+    // couldnt get the measurements to work next to the ingredient list
+    //  <p>${cocktail.strMeasure}</p>
+    // <ul>
+    //     ${Object.keys(cocktail)
+    //         .filter(key => key.startsWith('strMeasure') && cocktail[key])
+    //         .map(key => `<li>${cocktail[key]}</li>`)
+    //         .join('')}
+    // </ul>`
 
     cocktailContainer.innerHTML = cocktailHTML;
 
@@ -22,17 +28,7 @@ export const displayError = (cocktailContainer, message) => {
 };
 
 export const createCocktail = (cocktails) => {
-    const newCocktail = {
-        id: Date.now().toString(),
-        strDrink: "New Cocktail",
-        strInstructions: "Mix and enjoy!",
-        strIngredient1: "Ingredient 1",
-        // strIngredient2: "Ingredient 2",
-        strDrinkThumb: "https://via.placeholder.com/300"
-    };
-
-    cocktails.push(newCocktail);
-    console.log('Created cocktail:', newCocktail);
+    console.log('Created cocktail:', cocktails);
     alert('New cocktail created!');
 };
 
