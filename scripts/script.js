@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     createButton.addEventListener('click', () => createCocktail(cocktails));
     updateButton.addEventListener('click', () => updateCocktail(currentCocktail));
-    deleteButton.addEventListener('click', () => {
-        cocktails = deleteCocktail(cocktails, currentCocktail, cocktailContainer);
+    deleteButton.addEventListener('click', () => {cocktails = deleteCocktail(cocktails, currentCocktail, cocktailContainer);
     });
 });
