@@ -1,32 +1,29 @@
 /* HTML Body Styling */
 body {
     background-color: orangered;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 60px;
     text-align: center;
-    /* background: #1abc9c; */
-    color: white;
+    color: black;
     font-size: 30px;
-
 }
 
-/* Header Image Styling */
-#headerimg {
-    border-radius: 50%;
+/* #headerimg {
     width: 500px;
-}
+} */
 
 /* Image Styling*/
 img {
-    width: 500px;
+    width: 350px;
     margin-top: 50px;
 }
 
 
 /* Search Bar Styling */
-input {
+/* input {
     background: #fff;
     padding: 0 120px 0 0;
     border-radius: 1px;
     margin-top: 100px;
     box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.3);
-}
+} */
